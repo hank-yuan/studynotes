@@ -35,6 +35,22 @@
       return false;
     }
     palindrome("eye");
+
+    // 找出最长单词------------------------
+    function findLongestWord(str) {
+      // 请把你的代码写在这里
+      var arrStr = str.split(" ");
+      var lstr = 0;
+      for (let index = 0; index < arrStr.length; index++) {
+        var currLen = arrStr[index].length;
+        if (currLen　> lstr){
+          lstr = currLen;
+        }
+      }
+      return lstr;
+    }
+
+    findLongestWord("The quick brown fox jumped over the lazy dog");
   </script>
 </body>
 
