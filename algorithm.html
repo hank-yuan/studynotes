@@ -23,6 +23,18 @@
       return ele;
     }
     factorialize(5);
+
+    // 判断是否回文，去掉所有非字母数字后--------------------------
+    function palindrome(str) {
+      // 请把你的代码写在这里
+      var newStr = str.replace(/\s/g, "").replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+      var reverStr = newStr.split("").reverse().join("");
+      if (newStr === reverStr) {
+        return true;
+      }
+      return false;
+    }
+    palindrome("eye");
   </script>
 </body>
 
