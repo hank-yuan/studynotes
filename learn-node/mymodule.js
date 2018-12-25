@@ -8,6 +8,9 @@ let adder = (a, b) => {
 
 const pi = 3.14
 
+// module.exports.counter = counter
+// module.exports.adder = adder
+
 // module.exports = {
 //   counter: counter,
 //   adder: adder,
