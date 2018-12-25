@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "standard": "^12.0.1"
+  },
+  "scripts": {
+    "push": "git add . && git commit -m 'daily commit' &&　git push"
   }
 }
