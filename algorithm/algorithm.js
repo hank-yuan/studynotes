@@ -20,6 +20,7 @@ function palindrome (str) {
   if (newStr === reverStr) {
     return true
   }
+
   return false
 }
 palindrome('eye')
