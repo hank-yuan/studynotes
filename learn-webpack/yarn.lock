@@ -2680,8 +2680,8 @@ webpack-sources@^1.1.0, webpack-sources@^1.3.0:
 
 webpack@^4.28.2:
   version "4.28.2"
-  resolved "http://registry.npm.taobao.org/webpack/download/webpack-4.28.2.tgz#6b534a8bc91a45787ed631dc2e87aec94e9e4db7"
-  integrity sha1-a1NKi8kaRXh+1jHcLoeuyU6eTbc=
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.28.2.tgz#6b534a8bc91a45787ed631dc2e87aec94e9e4db7"
+  integrity sha512-PK3uVg3/NuNVOjPfYleFI6JF7khO7c2kIlksH7mivQm+QDcwiqV1x6+q89dDeOioh5FNxJHr3LKbDu3oSAhl9g==
   dependencies:
     "@webassemblyjs/ast" "1.7.11"
     "@webassemblyjs/helper-module-context" "1.7.11"
