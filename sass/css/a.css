@@ -1,0 +1,127 @@
+@charset "UTF-8";
+div.box {
+  background-color: #123;
+}
+
+h1.page-header {
+  border: 1px solid #123;
+}
+
+.nav {
+  height: 100px;
+}
+
+.nav ul {
+  margin: 0;
+}
+
+.nav ul li {
+  float: left;
+}
+
+.nav ul li a {
+  display: block;
+}
+
+.nav ul li a:hover {
+  color: #fff;
+}
+
+.nav .nav-text {
+  font-size: 15px;
+}
+
+body {
+  font-family: microsoft yahei;
+  font-size: 15px;
+}
+
+.alert-warning {
+  color: red;
+  background-color: #fcf8e3;
+}
+
+.alert-warning a {
+  color: #cc0000;
+}
+
+.alert-info {
+  color: red;
+  background-color: #d9edf7;
+}
+
+.alert-info a {
+  color: #cc0000;
+}
+
+.alert, .alert-info {
+  padding: 15px;
+}
+
+.alert a, .alert-info a {
+  font-weight: bold;
+}
+
+.alert-info {
+  background-color: #d0edf7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 这样的注释会被保留 */
+/* 当前版本0.0.1*/
+.alert-info {
+  border-color: #ccc;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.col-1 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 75%;
+}
+
+.col-4 {
+  width: 100%;
+}
+
+.icon-success {
+  background-image: url(../images/icon/success.png);
+}
+
+.icon-error {
+  background-image: url(../images/icon/error.png);
+}
+
+.icon-warning {
+  background-image: url(../images/icon/warning.png);
+}
+
+.item-6 {
+  width: 30px;
+}
+
+.item-4 {
+  width: 20px;
+}
+
+.item-2 {
+  width: 10px;
+}
+
+body {
+  background-color: #fff;
+}
+/*# sourceMappingURL=a.css.map */

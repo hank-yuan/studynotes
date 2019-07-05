@@ -1,0 +1,121 @@
+// 变量
+$primary-color: #123;
+$primary-border: 1px solid $primary-color;
+div.box {
+  background-color: $primary-color;
+}
+h1.page-header {
+  border: $primary-border;
+}
+
+// 选择器嵌套
+.nav {
+  height: 100px;
+  ul {
+    margin: 0;
+    li {
+      float: left;
+      a {
+        display: block;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+  & &-text {
+    font-size: 15px;
+  }
+}
+// 属性嵌套
+body {
+  font: {
+    family: microsoft yahei;
+    size: 15px;
+  }
+}
+
+// 混合
+@mixin alert($text-color, $background) {
+  color: $text-color;
+  background-color: $background;
+  a {
+    color: darken($text-color, 10%);
+  }
+}
+.alert-warning {
+  @include alert(red, #fcf8e3);
+}
+// 如果指定参数名，就可以忽略默认传参顺序
+.alert-info {
+  @include alert($background: #d9edf7, $text-color: red);
+}
+
+// 继承扩展
+.alert {
+  padding: 15px;
+  // 如果有子选择器，也会被继承
+  a {
+    font-weight: bold;
+  }
+}
+.alert-info {
+  @extend .alert;
+  background-color: #d0edf7;
+}
+
+// 导入@import
+@import "base";
+/* 这样的注释会被保留 */
+
+// Interpolation
+$version: "0.0.1";
+/* 当前版本#{$version}*/
+$name: "info";
+$attr: "border";
+.alert-#{$name} {
+  #{$attr}-color: #ccc;
+}
+
+// 控制指令
+// @if
+$use-prefixes: false;
+.rounded {
+  @if $use-prefixes == true {
+    -webkit-border-radius: 5px;
+  }
+  border-radius: 5px;
+}
+// @for
+$columns: 4;
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: 100% / $columns * $i;
+  }
+}
+// @each
+$icons: success error warning;
+@each $icon in $icons {
+  .icon-#{$icon} {
+    background-image: url(../images/icon/#{$icon}.png);
+  }
+}
+//@while
+$i: 6;
+@while $i > 0 {
+  .item-#{$i} {
+    width: 5px * $i;
+  }
+  $i: $i - 2;
+}
+// @function
+$colors: (
+  light: #fff,
+  dark: #000
+);
+@function color($value) {
+  @return map-get($map: $colors, $key: $value);
+}
+body {
+  background-color: color(light);
+}
